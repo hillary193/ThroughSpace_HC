@@ -23,44 +23,40 @@ Condiciones de finalización:
 - Derrota: perder todas las vidas.
   
 # Estructura del juego
-
 El proyecto utiliza la arquitectura Game + Screen de libGDX.
-
-Las clases principales son:
+Las clases principales son: MenuScreen, GameScreen y EndScreen
 
 # MenuScreen
 Pantalla inicial del juego donde se muestra el menú principal y el botón para comenzar la partida.
 
 # GameScreen
 Contiene la lógica principal del juego:
-Movimiento del jugador
-Aparición aleatoria de objetos
-Sistema de colisiones
-Sistema de puntuación
-Sistema de vidas
+- Movimiento del jugador
+- Aparición aleatoria de objetos
+- Sistema de colisiones
+- Sistema de puntuación
+- Sistema de vidas
 
 # EndScreen
 Muestra la pantalla final del juego dependiendo del resultado:
-Pantalla de victoria
-Pantalla de derrota
-Además permite volver al menú principal.
+- Pantalla de victoria
+- Pantalla de derrota
+- Además permite volver al menú principal.
 
 # Conclusiones
-
 Este proyecto permitió comprender mejor la estructura básica de un videojuego utilizando libGDX, incluyendo:
 - El ciclo principal del juego (Input → Update → Render)
 - El uso de Delta Time para movimientos independientes del hardware
 - La detección de colisiones mediante rectángulos
 - La organización del código usando pantallas (Screens)
   
-Además, el juego amplía el ejemplo clásico Drop añadiendo nuevas mecánicas como:
+El juego amplía el ejemplo clásico Drop añadiendo nuevas mecánicas como:
 - Sistema de vidas
 - Diferentes tipos de obstáculos
 - Sistema de puntuación
 - Condiciones de victoria y derrota
 
 # Plataformas
-
 Este proyecto está organizado en módulos siguiendo la estructura estándar de libGDX:
 - core → contiene la lógica principal del juego compartida por todas las plataformas.
 - lwjgl3 → plataforma principal para ejecutar el juego en Desktop utilizando LWJGL3.
